@@ -36,6 +36,7 @@ void main() {
         else if (light >= 700 && light < 750) {
             set_led_value(0b110);
             _delay_ms(100);
+        }
         else if (light >= 750 && light < 800) {
             set_led_value(0b111);
             _delay_ms(100);
