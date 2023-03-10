@@ -9,31 +9,31 @@ void main() {
 
     while (1) {
         light = read_adc(PC4);
-        if (light < 125) {
+        if (light < 200) {
             set_led_value(0b000);
             _delay_ms(100);
         }
-        else if (light >= 125 && light < 250) {
+        else if (light >= 200 && light < 275) {
             set_led_value(0b001);
             _delay_ms(100);
         }
-        else if (light >= 250 && light < 375) {
+        else if (light >= 275 && light < 350) {
             set_led_value(0b010);
             _delay_ms(100);
         }
-        else if (light >= 375 && light < 500) {
+        else if (light >= 350 && light < 425) {
             set_led_value(0b011);
             _delay_ms(100);
         }
-        else if (light >= 500 && light < 625) {
+        else if (light >= 425 && light < 500) {
             set_led_value(0b100);
             _delay_ms(100);
         }
-        else if (light >= 625 && light < 750) {
+        else if (light >= 500 && light < 575) {
             set_led_value(0b101);
             _delay_ms(100);
         }
-        else if (light >= 750 && light < 875) {
+        else if (light >= 575 && light < 650) {
             set_led_value(0b110);
             _delay_ms(100);
         }
