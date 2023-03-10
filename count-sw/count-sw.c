@@ -15,5 +15,6 @@ void main() {
         count = count%8;
 
         set_led_value(count);
+        _delay_ms(100);
     }
 }
