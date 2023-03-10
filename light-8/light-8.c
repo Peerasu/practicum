@@ -13,11 +13,11 @@ void main() {
         if (light > max) max = light;
         if (light < min) min = light;
 
-        if (light < min+0.4*max) {
+        if (light < min+0.3*max) {
             set_led_value(0b000);
             _delay_ms(100);
         }
-        else if (light >= min+0.4*max && light < min+0.475*max) {
+        else if (light >= min+0.3*max && light < min+0.475*max) {
             set_led_value(0b001);
             _delay_ms(100);
         }
