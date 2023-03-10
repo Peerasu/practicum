@@ -1,7 +1,7 @@
 #define F_CPU 16000000
 #include <avr/io.h>
 #include <util/delay.h>
-#include "peri.h"
+#include "../peri.h"
 
 void main() {
     unit16_t light;
