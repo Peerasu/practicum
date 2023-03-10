@@ -11,6 +11,7 @@ void main() {
     while(1) {
         if (SWITCH_PRESSED()) {
             count++;
+            _delay_ms(100);
         }
         count = count%8;
 
