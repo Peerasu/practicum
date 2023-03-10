@@ -4,10 +4,10 @@
 #include "../peri.h"
 
 void main() {
-    unit16_t light;
+    uint16_t light;
     init_peri();
 
-    while (true) {
+    while (1) {
         light = read_adc(PC4);
         if (light < 200)
             set_led_value(0b001);
