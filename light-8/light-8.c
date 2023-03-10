@@ -13,31 +13,31 @@ void main() {
         if (light > max) max = light;
         if (light < min) min = light;
 
-        if (light < min+0.125*max) {
+        if (light < min+0.4*max) {
             set_led_value(0b000);
             _delay_ms(100);
         }
-        else if (light >= min+0.125*max && light < min+0.250*max) {
+        else if (light >= min+0.4*max && light < min+0.475*max) {
             set_led_value(0b001);
             _delay_ms(100);
         }
-        else if (light >= min+0.250*max && light < min+0.375*max) {
+        else if (light >= min+0.475*max && light < min+0.550*max) {
             set_led_value(0b010);
             _delay_ms(100);
         }
-        else if (light >= min+0.375*max && light < min+0.5*max) {
+        else if (light >= min+0.550*max && light < min+0.625*max) {
             set_led_value(0b011);
             _delay_ms(100);
         }
-        else if (light >= min+0.5*max && light < min+0.625*max) {
+        else if (light >= min+0.625*max && light < min+0.7*max) {
             set_led_value(0b100);
             _delay_ms(100);
         }
-        else if (light >= min+0.625*max && light < min+0.75*max) {
+        else if (light >= min+0.7*max && light < min+0.775*max) {
             set_led_value(0b101);
             _delay_ms(100);
         }
-        else if (light >= min+0.75*max && light < min+0.875*max) {
+        else if (light >= min+0.775*max && light < min+0.85*max) {
             set_led_value(0b110);
             _delay_ms(100);
         }
