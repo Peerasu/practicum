@@ -9,7 +9,7 @@ void main() {
     set_led_value(0);
 
     while(1) {
-        if (SWITCH_PRESSED) {
+        if (SWITCH_PRESSED()) {
             count++;
         }
         count = count%8;
